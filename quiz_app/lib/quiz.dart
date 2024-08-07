@@ -16,15 +16,15 @@ class _QuizState extends State<Quiz> {
 
   void switchScreen() {
     setState(() {
-      activeScreen = 'qusestions-screen';
+      activeScreen = 'questions_screen';
     });
   }
 
   @override
   Widget build(context) {
     Widget screenWidget =StartScreen(switchScreen);
-
-    if (activeScreen == 'questions-screen'){
+    
+    if (activeScreen == 'questions_screen'){
        screenWidget = const QuestionsScreen(); 
     }
              
